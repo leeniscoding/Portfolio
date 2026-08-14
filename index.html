@@ -322,6 +322,18 @@
     padding:5px 9px;
     border-radius:6px;
   }
+  .project-link{
+    font-family:var(--font-mono);
+    font-size:12.5px;
+    color:var(--cyan);
+    margin-top:18px;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    transition:gap 0.2s;
+    width:fit-content;
+  }
+  .project-card:hover .project-link{gap:10px;}
 
   @media (max-width:800px){
     .projects-grid{grid-template-columns:1fr;}
@@ -506,7 +518,7 @@
     <div class="section-label"><span class="num">//</span> 02 — selected work</div>
     <div class="projects-grid">
 
-      <div class="project-card">
+      <a href="https://nova-studio-tech.vercel.app/" target="_blank" rel="noopener" class="project-card">
         <span class="badge badge-web">WEB</span>
         <h3>Nova Studio</h3>
         <div class="project-meta">05/2026 – 07/2026</div>
@@ -518,7 +530,8 @@
           <span class="tag">Tailwind CSS</span>
           <span class="tag">Vercel</span>
         </div>
-      </div>
+        <div class="project-link">Visit site ↗</div>
+      </a>
 
       <div class="project-card">
         <span class="badge badge-mobile">MOBILE</span>
